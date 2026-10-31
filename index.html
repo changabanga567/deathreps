@@ -89,23 +89,23 @@ footer{border-top:1px solid var(--line);padding:30px 0 50px;color:var(--mute);fo
 // The daily rotation picks from the entries matching the player's difficulty.
 window.DR_DB = [
   // ---------------- WARM-UP (Intermediate) ----------------
-  { name: "Wall push-ups",            tier: "warmup", base: 15, unit: "reps", anim: "Incline push-ups", muscles: "Chest · triceps", tip: "Hands on the wall at shoulder height, step back. Lean in until your nose nearly touches, push back." },
+  { name: "Wall push-ups",            tier: "warmup", base: 15, unit: "reps", anim: "Wall push-ups", muscles: "Chest · triceps", tip: "Hands on the wall at shoulder height, step back. Lean in until your nose nearly touches, push back." },
   { name: "Knee push-ups",            tier: "warmup", base: 10, unit: "reps", anim: "Knee push-ups", muscles: "Chest · triceps", tip: "Knees on the floor, body straight from knees to head. Chest to a fist off the floor, press up." },
   { name: "Incline push-ups",         tier: "warmup", base: 10, unit: "reps", anim: "Incline push-ups", muscles: "Chest · triceps", tip: "Hands on your desk edge or a braced chair. Body straight, chest to the edge, press away." },
   { name: "Bodyweight squats",        tier: "warmup", base: 15, unit: "reps", anim: "Squats", muscles: "Quads · glutes", tip: "Feet shoulder-width, sit back to parallel, chest up, drive through your heels." },
-  { name: "Chair sit-to-stands",      tier: "warmup", base: 12, unit: "reps", anim: "Squats", muscles: "Quads · glutes", tip: "Sit to the edge of your chair, stand up without using your hands, sit back down slowly." },
+  { name: "Chair sit-to-stands",      tier: "warmup", base: 12, unit: "reps", anim: "Sit-to-stands", muscles: "Quads · glutes", tip: "Sit to the edge of your chair, stand up without using your hands, sit back down slowly." },
   { name: "Glute bridges",            tier: "warmup", base: 15, unit: "reps", anim: "Glute bridges", muscles: "Glutes · hamstrings", tip: "On your back, knees bent. Squeeze glutes to lift hips into a straight line, pause, lower." },
   { name: "Reverse lunges (each leg)",tier: "warmup", base: 8,  unit: "reps", anim: "Lunges", muscles: "Quads · glutes", tip: "Step back, drop the back knee toward the floor, front knee over ankle. Push back up." },
   { name: "Calf raises",              tier: "warmup", base: 20, unit: "reps", anim: "Calf raises", muscles: "Calves", tip: "Stand tall, rise all the way onto your toes, pause 1 sec at the top, lower slowly." },
-  { name: "Bent-knee chair dips",     tier: "warmup", base: 8,  unit: "reps", anim: "Chair dips", muscles: "Triceps", tip: "Hands on the chair edge, knees bent, feet close. Lower to 90° at the elbows, press up." },
+  { name: "Bent-knee chair dips",     tier: "warmup", base: 8,  unit: "reps", anim: "Bent-knee chair dips", muscles: "Triceps", tip: "Hands on the chair edge, knees bent, feet close. Lower to 90° at the elbows, press up." },
   { name: "Wall sit",                 tier: "warmup", base: 30, unit: "sec",  anim: "Wall sit", muscles: "Quads", tip: "Back flat on the wall, slide down until knees are at 90°. Hold." },
   { name: "Plank",                    tier: "warmup", base: 30, unit: "sec",  anim: "Plank", muscles: "Core", tip: "Forearms down, elbows under shoulders, squeeze glutes and abs. Don't let hips sag." },
   { name: "Superman hold",            tier: "warmup", base: 20, unit: "sec",  anim: "Superman", muscles: "Lower back · glutes", tip: "Face down, lift arms, chest and legs off the floor together. Hold, squeeze your back." },
   { name: "Lying leg raises",         tier: "warmup", base: 10, unit: "reps", anim: "Leg raises", muscles: "Lower abs", tip: "On your back, legs straight. Raise them to vertical, lower slowly without touching the floor." },
   { name: "Crunches",                 tier: "warmup", base: 15, unit: "reps", anim: "Crunches", muscles: "Abs", tip: "Knees bent, hands by your ears. Curl shoulders off the floor using your abs, lower slowly." },
-  { name: "Side plank (each side)",   tier: "warmup", base: 20, unit: "sec",  anim: "Plank", muscles: "Obliques · core", tip: "On one forearm, feet stacked, hips lifted in a straight line. Hold, then switch." },
+  { name: "Side plank (each side)",   tier: "warmup", base: 20, unit: "sec",  anim: "Side plank", muscles: "Obliques · core", tip: "On one forearm, feet stacked, hips lifted in a straight line. Hold, then switch." },
   { name: "Static split squats (each leg)", tier: "warmup", base: 8, unit: "reps", anim: "Lunges", muscles: "Quads · glutes", tip: "Staggered stance, feet stay planted. Drop straight down until the back knee nearly touches, drive up." },
-  { name: "Pike hold",                tier: "warmup", base: 20, unit: "sec",  anim: "Pike push-ups", muscles: "Shoulders", tip: "Hips high in an upside-down V, arms straight, push the floor away. Hold." },
+  { name: "Pike hold",                tier: "warmup", base: 20, unit: "sec",  anim: "Pike hold", muscles: "Shoulders", tip: "Hips high in an upside-down V, arms straight, push the floor away. Hold." },
 
   // ---------------- GRINDER (Average) ----------------
   { name: "Push-ups",                 tier: "grinder", base: 12, unit: "reps", anim: "Push-ups", muscles: "Chest · triceps · shoulders", tip: "Hands under shoulders, straight body. Chest to a fist off the floor, press up hard." },
@@ -118,32 +118,32 @@ window.DR_DB = [
   { name: "Burpees",                  tier: "grinder", base: 6,  unit: "reps", anim: "Burpees", muscles: "Full body", tip: "Squat, kick back to plank, push-up, jump feet in, jump up." },
   { name: "Staggered push-ups (each side)", tier: "grinder", base: 6, unit: "reps", anim: "Push-ups", muscles: "Chest · triceps", tip: "One hand forward, one back. Do the reps, then switch hand positions." },
   { name: "Forward lunges (each leg)",tier: "grinder", base: 10, unit: "reps", anim: "Lunges", muscles: "Quads · glutes", tip: "Big step forward, back knee down toward the floor, push off the front foot to return." },
-  { name: "Single-leg glute bridges (each leg)", tier: "grinder", base: 10, unit: "reps", anim: "Glute bridges", muscles: "Glutes · hamstrings", tip: "One foot planted, other leg straight up. Drive hips up through the planted heel." },
+  { name: "Single-leg glute bridges (each leg)", tier: "grinder", base: 10, unit: "reps", anim: "Single-leg glute bridges", muscles: "Glutes · hamstrings", tip: "One foot planted, other leg straight up. Drive hips up through the planted heel." },
   { name: "Tempo squats (3s down)",   tier: "grinder", base: 10, unit: "reps", anim: "Squats", muscles: "Quads · glutes", tip: "Take 3 full seconds to lower, pause at the bottom, stand up fast." },
-  { name: "Chair step-ups (each leg)",tier: "grinder", base: 10, unit: "reps", anim: "Bulgarian split squats (each leg)", muscles: "Quads · glutes", tip: "Sturdy (non-rolling) chair only. Step up, drive through the top heel, step down with control." },
+  { name: "Chair step-ups (each leg)",tier: "grinder", base: 10, unit: "reps", anim: "Chair step-ups", muscles: "Quads · glutes", tip: "Sturdy (non-rolling) chair only. Step up, drive through the top heel, step down with control." },
   { name: "Push-up hold (bottom)",    tier: "grinder", base: 30, unit: "sec",  anim: "Push-up hold (bottom)", muscles: "Chest · triceps · core", tip: "Lower to the bottom of a push-up, chest just off the floor. Hold." },
-  { name: "Hollow body hold",         tier: "grinder", base: 30, unit: "sec",  anim: "Leg raises", muscles: "Abs", tip: "On your back, lower back pressed down, arms and legs straight and just off the floor. Hold." },
-  { name: "V-ups",                    tier: "grinder", base: 10, unit: "reps", anim: "Crunches", muscles: "Abs", tip: "Lying flat, lift legs and torso together to touch your toes, lower under control." },
+  { name: "Hollow body hold",         tier: "grinder", base: 30, unit: "sec",  anim: "Hollow hold", muscles: "Abs", tip: "On your back, lower back pressed down, arms and legs straight and just off the floor. Hold." },
+  { name: "V-ups",                    tier: "grinder", base: 10, unit: "reps", anim: "V-ups", muscles: "Abs", tip: "Lying flat, lift legs and torso together to touch your toes, lower under control." },
   { name: "Wall sit (long)",          tier: "grinder", base: 45, unit: "sec",  anim: "Wall sit", muscles: "Quads", tip: "Back on the wall, knees at 90°. Hold without resting hands on your thighs." },
 
   // ---------------- BEAST MODE (Advanced) ----------------
   { name: "Decline push-ups",         tier: "beast", base: 12, unit: "reps", anim: "Decline push-ups", muscles: "Upper chest · shoulders", tip: "Feet up on your chair, hands on the floor. Lower under control, press up." },
   { name: "Clap push-ups",            tier: "beast", base: 8,  unit: "reps", anim: "Clap push-ups", muscles: "Chest power · triceps", tip: "Push so hard your hands leave the floor. Clap, land with soft elbows." },
-  { name: "Archer push-ups (each side)", tier: "beast", base: 5, unit: "reps", anim: "Push-ups (wide)", muscles: "Chest · triceps (one-arm builder)", tip: "Very wide hands. Shift your weight to one arm as you lower, the other stays straight." },
-  { name: "Decline pike push-ups",    tier: "beast", base: 8,  unit: "reps", anim: "Pike push-ups", muscles: "Shoulders", tip: "Feet up on your chair, hips high. Lower your head toward the floor, press up." },
-  { name: "Pseudo planche push-ups",  tier: "beast", base: 8,  unit: "reps", anim: "Push-ups", muscles: "Front delts · chest", tip: "Hands turned out by your waist, lean forward past your hands. Push-up from there." },
+  { name: "Archer push-ups (each side)", tier: "beast", base: 5, unit: "reps", anim: "Archer push-ups", muscles: "Chest · triceps (one-arm builder)", tip: "Very wide hands. Shift your weight to one arm as you lower, the other stays straight." },
+  { name: "Decline pike push-ups",    tier: "beast", base: 8,  unit: "reps", anim: "Decline pike push-ups", muscles: "Shoulders", tip: "Feet up on your chair, hips high. Lower your head toward the floor, press up." },
+  { name: "Pseudo planche push-ups",  tier: "beast", base: 8,  unit: "reps", anim: "Pseudo planche push-ups", muscles: "Front delts · chest", tip: "Hands turned out by your waist, lean forward past your hands. Push-up from there." },
   { name: "Tempo push-ups (4s down)", tier: "beast", base: 10, unit: "reps", anim: "Push-ups", muscles: "Chest · triceps", tip: "Take 4 full seconds to lower, pause 1 sec at the bottom, press up explosively." },
-  { name: "Hindu push-ups",           tier: "beast", base: 10, unit: "reps", anim: "Pike push-ups", muscles: "Shoulders · chest · triceps", tip: "From a pike, swoop your chest low between your hands and up into a cobra, then reverse." },
+  { name: "Hindu push-ups",           tier: "beast", base: 10, unit: "reps", anim: "Hindu push-ups", muscles: "Shoulders · chest · triceps", tip: "From a pike, swoop your chest low between your hands and up into a cobra, then reverse." },
   { name: "Straight-leg chair dips",  tier: "beast", base: 15, unit: "reps", anim: "Chair dips", muscles: "Triceps · chest", tip: "Legs fully straight, heels down. Deep dips, full lockout at the top." },
   { name: "Bulgarian split squats (heavy volume, each leg)", tier: "beast", base: 10, unit: "reps", anim: "Bulgarian split squats (each leg)", muscles: "Quads · glutes", tip: "Back foot on your chair. Slow down, explode up. Don't rest between legs." },
-  { name: "Jump lunges (each leg)",   tier: "beast", base: 8,  unit: "reps", anim: "Lunges", muscles: "Quads · glutes · power", tip: "From a lunge, jump and switch legs in the air. Land soft, go again." },
-  { name: "Assisted pistol squats (each leg)", tier: "beast", base: 5, unit: "reps", anim: "Squats", muscles: "Quads · glutes", tip: "Hold your desk lightly. Squat all the way down on one leg, other leg out front, stand up." },
-  { name: "Tuck jumps",               tier: "beast", base: 10, unit: "reps", anim: "Jump squats", muscles: "Legs · power", tip: "Jump high and pull your knees to your chest, land soft, rebound straight up." },
+  { name: "Jump lunges (each leg)",   tier: "beast", base: 8,  unit: "reps", anim: "Jump lunges", muscles: "Quads · glutes · power", tip: "From a lunge, jump and switch legs in the air. Land soft, go again." },
+  { name: "Assisted pistol squats (each leg)", tier: "beast", base: 5, unit: "reps", anim: "Assisted pistol squats", muscles: "Quads · glutes", tip: "Hold your desk lightly. Squat all the way down on one leg, other leg out front, stand up." },
+  { name: "Tuck jumps",               tier: "beast", base: 10, unit: "reps", anim: "Tuck jumps", muscles: "Legs · power", tip: "Jump high and pull your knees to your chest, land soft, rebound straight up." },
   { name: "Burpees (chest to floor)", tier: "beast", base: 10, unit: "reps", anim: "Burpees", muscles: "Full body", tip: "Full burpee, chest touches the floor every rep, big jump at the top." },
   { name: "Jump squats (heavy volume)", tier: "beast", base: 18, unit: "reps", anim: "Jump squats", muscles: "Quads · glutes · power", tip: "Max height every rep. No pausing at the top." },
   { name: "Push-up hold (long)",      tier: "beast", base: 45, unit: "sec",  anim: "Push-up hold (bottom)", muscles: "Chest · triceps · core", tip: "Bottom of a push-up, chest just off the floor, hold the whole time." },
-  { name: "Plank to push-up",         tier: "beast", base: 10, unit: "reps", anim: "Push-ups", muscles: "Core · triceps · shoulders", tip: "From a forearm plank, press up to a high plank one arm at a time, then back down." },
-  { name: "Single-leg glute bridges (slow, each leg)", tier: "beast", base: 15, unit: "reps", anim: "Glute bridges", muscles: "Glutes · hamstrings", tip: "One leg up. 2 sec up, 2 sec hold at the top, 2 sec down." }
+  { name: "Plank to push-up",         tier: "beast", base: 10, unit: "reps", anim: "Plank to push-up", muscles: "Core · triceps · shoulders", tip: "From a forearm plank, press up to a high plank one arm at a time, then back down." },
+  { name: "Single-leg glute bridges (slow, each leg)", tier: "beast", base: 15, unit: "reps", anim: "Single-leg glute bridges", muscles: "Glutes · hamstrings", tip: "One leg up. 2 sec up, 2 sec hold at the top, 2 sec down." }
 ];
 
 // Exercise library + stick-figure animator (no external assets). Strength-focused, bodyweight + your chair.
@@ -209,6 +209,66 @@ window.DR_DB = [
     "Crunches": { secPerRep: 2, muscles: "Abs", tip: "", poses: [
       P({ h:[42,110], n:[52,110], p:[96,110], k:[116,88], f:[136,116], e:[46,100], w:[40,96] }),
       P({ h:[62,92], n:[68,100], p:[96,110], k:[116,88], f:[136,116], e:[60,92], w:[58,84] })] },
+    "Wall push-ups": { secPerRep: 1.8, prop: "wallR", muscles: "Chest", tip: "", poses: [
+      P({ h:[147,34], n:[140,44], p:[124,74], k:[116,95], f:[108,116], e:[154,44], w:[168,46] }),
+      P({ h:[159,38], n:[150,48], p:[128,74], k:[118,95], f:[108,116], e:[152,62], w:[168,46] })] },
+    "Sit-to-stands": { secPerRep: 2.4, prop: "sitchair", muscles: "Legs", tip: "", poses: [
+      P({ h:[88,42], n:[86,52], p:[80,84], k:[108,86], f:[104,116], e:[98,62], w:[114,62] }),
+      P({ h:[100,26], n:[100,36], p:[98,70], k:[100,93], f:[104,116], e:[110,46], w:[126,46] })] },
+    "Bent-knee chair dips": { secPerRep: 2.2, prop: "dipchair", muscles: "Triceps", tip: "", poses: [
+      P({ h:[68,42], n:[66,54], p:[70,86], k:[102,84], f:[102,116], e:[64,67], w:[62,80] }),
+      P({ h:[72,62], n:[70,74], p:[74,104], k:[104,96], f:[102,116], e:[48,74], w:[62,80] })] },
+    "Side plank": { secPerRep: 1.6, muscles: "Obliques", tip: "", poses: [
+      P({ h:[52,78], n:[62,86], p:[106,98], k:[128,106], f:[150,114], e1:[60,116], w1:[82,116], e2:[82,82], w2:[100,94] }),
+      P({ h:[52,79], n:[62,87], p:[106,102], k:[128,108], f:[150,114], e1:[60,116], w1:[82,116], e2:[82,84], w2:[100,97] })] },
+    "Pike hold": { secPerRep: 1.6, muscles: "Shoulders", tip: "", poses: [
+      P({ h:[126,100], n:[118,90], p:[85,60], k:[68,90], f:[50,116], e:[126,103], w:[132,116] }),
+      P({ h:[126,101], n:[118,91], p:[85,58], k:[68,89], f:[50,116], e:[126,104], w:[132,116] })] },
+    "Single-leg glute bridges": { secPerRep: 2.2, muscles: "Glutes", tip: "", poses: [
+      P({ h:[40,110], n:[50,110], p:[92,112], k1:[114,88], f1:[130,116], k2:[112,100], f2:[132,90], e:[70,114], w:[84,116] }),
+      P({ h:[40,110], n:[52,106], p:[94,90], k1:[116,84], f1:[130,116], k2:[116,84], f2:[138,78], e:[70,112], w:[84,116] })] },
+    "Chair step-ups": { secPerRep: 3, prop: "stepchair", muscles: "Legs", tip: "", poses: [
+      P({ h:[92,26], n:[92,36], p:[92,70], k1:[112,64], f1:[120,86], k2:[92,93], f2:[92,116], e:[88,52], w:[88,68] }),
+      P({ h:[124,-4], n:[124,6], p:[124,40], k1:[127,63], f1:[128,86], k2:[120,62], f2:[118,84], e:[120,22], w:[118,38] })] },
+    "Hollow hold": { secPerRep: 1.6, muscles: "Abs", tip: "", poses: [
+      P({ h:[52,102], n:[60,107], p:[96,112], k:[122,106], f:[148,100], e:[42,102], w:[26,98] }),
+      P({ h:[52,103], n:[60,108], p:[96,112], k:[122,107], f:[148,102], e:[42,103], w:[26,100] })] },
+    "V-ups": { secPerRep: 2.4, muscles: "Abs", tip: "", poses: [
+      P({ h:[40,110], n:[50,110], p:[96,112], k:[122,112], f:[148,112], e:[32,112], w:[18,112] }),
+      P({ h:[74,68], n:[80,76], p:[96,112], k:[108,88], f:[118,62], e:[96,70], w:[112,64] })] },
+    "Archer push-ups": { secPerRep: 3, muscles: "Chest", tip: "", poses: [
+      P({ h:[100,58], n:[100,70], p:[100,86], k:[100,100], f:[100,114], e1:[68,92], w1:[40,116], e2:[132,92], w2:[160,116] }),
+      P({ h:[64,88], n:[68,98], p:[86,102], k:[94,108], f:[100,114], e1:[52,108], w1:[40,116], e2:[114,107], w2:[160,116] }),
+      P({ h:[100,58], n:[100,70], p:[100,86], k:[100,100], f:[100,114], e1:[68,92], w1:[40,116], e2:[132,92], w2:[160,116] }),
+      P({ h:[136,88], n:[132,98], p:[114,102], k:[106,108], f:[100,114], e1:[86,107], w1:[40,116], e2:[148,108], w2:[160,116] })] },
+    "Decline pike push-ups": { secPerRep: 2.6, prop: "declinechair", muscles: "Shoulders", tip: "", poses: [
+      P({ h:[126,98], n:[120,88], p:[88,48], k:[66,65], f:[44,82], e:[126,100], w:[132,116] }),
+      P({ h:[122,110], n:[116,100], p:[88,52], k:[66,67], f:[44,82], e:[106,100], w:[132,116] })] },
+    "Pseudo planche push-ups": { secPerRep: 2.6, muscles: "Shoulders", tip: "", poses: [
+      P({ h:[150,74], n:[140,80], p:[98,90], k:[70,100], f:[45,114], e:[126,98], w:[112,116] }),
+      P({ h:[154,100], n:[144,104], p:[98,106], k:[70,110], f:[45,114], e:[128,106], w:[112,116] })] },
+    "Hindu push-ups": { secPerRep: 3.2, muscles: "Shoulders · chest", tip: "", poses: [
+      P({ h:[126,100], n:[118,90], p:[85,60], k:[68,90], f:[50,116], e:[126,103], w:[132,116] }),
+      P({ h:[132,108], n:[120,106], p:[90,102], k:[70,110], f:[50,116], e:[118,106], w:[132,116] }),
+      P({ h:[136,72], n:[130,82], p:[96,108], k:[70,112], f:[50,116], e:[131,99], w:[132,116] })] },
+    "Jump lunges": { secPerRep: 2.6, muscles: "Legs", tip: "", poses: [
+      P({ h:[100,48], n:[100,58], p:[100,90], k1:[124,92], f1:[126,116], k2:[90,112], f2:[70,116], e:[92,74], w:[95,90] }),
+      P({ h:[100,22], n:[100,32], p:[100,64], k1:[112,82], f1:[108,104], k2:[92,84], f2:[84,102], e:[94,46], w:[96,62] }),
+      P({ h:[100,48], n:[100,58], p:[100,90], k2:[124,92], f2:[126,116], k1:[90,112], f1:[70,116], e:[92,74], w:[95,90] }),
+      P({ h:[100,22], n:[100,32], p:[100,64], k2:[112,82], f2:[108,104], k1:[92,84], f1:[84,102], e:[94,46], w:[96,62] })] },
+    "Assisted pistol squats": { secPerRep: 4, prop: "desk", muscles: "Legs", tip: "", poses: [
+      P({ h:[100,26], n:[100,36], p:[100,70], k1:[100,93], f1:[100,116], k2:[118,80], f2:[136,86], e:[118,50], w:[140,70] }),
+      P({ h:[110,62], n:[104,70], p:[90,102], k1:[116,94], f1:[102,116], k2:[118,106], f2:[146,106], e:[122,72], w:[142,70] })] },
+    "Tuck jumps": { secPerRep: 2.2, muscles: "Legs", tip: "", poses: [
+      STAND,
+      P({ h:[104,44], n:[102,54], p:[92,84], k1:[110,94], f1:[100,116], k2:[112,94], f2:[103,116], e1:[94,70], w1:[92,86], e2:[96,70], w2:[94,86] }),
+      P({ h:[100,4], n:[100,14], p:[100,46], k1:[118,36], f1:[104,54], k2:[120,38], f2:[106,56], e:[110,26], w:[116,40] }),
+      STAND] },
+    "Plank to push-up": { secPerRep: 3.2, muscles: "Core · triceps", tip: "", poses: [
+      P({ h:[152,90], n:[142,94], p:[95,97], k:[70,104], f:[45,114], e:[138,116], w:[160,116] }),
+      P({ h:[151,82], n:[141,86], p:[95,93], k:[70,102], f:[45,114], e1:[138,116], w1:[160,116], e2:[140,97], w2:[140,116] }),
+      PLANK_UP,
+      P({ h:[151,82], n:[141,86], p:[95,93], k:[70,102], f:[45,114], e1:[138,116], w1:[160,116], e2:[140,97], w2:[140,116] })] },
     "Plank": { secPerRep: 1, muscles: "Core", tip: "Forearms down, elbows under shoulders, squeeze glutes and abs hard. Straight line, don't let hips sag.", poses: [
       P({ h:[152,90], n:[142,94], p:[95,97], k:[70,104], f:[45,114], e:[138,116], w:[160,116] }),
       P({ h:[152,89], n:[142,93], p:[95,95], k:[70,103], f:[45,114], e:[138,116], w:[160,116] })] },
@@ -227,6 +287,10 @@ window.DR_DB = [
   }
 
   const PROPS = {
+    wallR: '<line x1="172" y1="0" x2="172" y2="118" stroke="#4a5d6c" stroke-width="4"/>',
+    sitchair: '<path d="M48 88 H90 M52 88 V118 M86 88 V118 M50 88 V52" stroke="#4a5d6c" stroke-width="4" fill="none" stroke-linecap="round"/>',
+    stepchair: '<path d="M108 88 H152 M112 88 V118 M148 88 V118 M150 88 V56" stroke="#4a5d6c" stroke-width="4" fill="none" stroke-linecap="round"/>',
+    desk: '<path d="M134 72 H186 M180 72 V118" stroke="#4a5d6c" stroke-width="4" fill="none" stroke-linecap="round"/>',
     dipchair: '<path d="M28 80 H66 M32 80 V118 M62 80 V118 M30 80 V48" stroke="#4a5d6c" stroke-width="4" fill="none" stroke-linecap="round"/>',
     inclinechair: '<path d="M136 86 H176 M140 86 V118 M172 86 V118 M174 86 V54" stroke="#4a5d6c" stroke-width="4" fill="none" stroke-linecap="round"/>',
     declinechair: '<path d="M22 84 H58 M26 84 V118 M54 84 V118 M24 84 V52" stroke="#4a5d6c" stroke-width="4" fill="none" stroke-linecap="round"/>',
